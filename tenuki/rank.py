@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from enum import StrEnum, Enum
+from enum import Enum
 from functools import total_ordering
 
 
@@ -24,6 +24,10 @@ class Rank:
 
     def __str__(self):
         return f"{self.value}{self.level.value}"
+
+    def __post_init__(self):
+        if self.value < 1 or (self.level in [RankLevel.DAN, RankLevel.PRO] and self.value > 9):
+            raise ValueError(f"Invalid rank: {self.value}{self.level.value}")
 
     def __lt__(self, other: Rank) -> bool:
         if self.level == other.level:
