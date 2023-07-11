@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="tenuki",
-    version="0.1.0",
+    version="0.2.0",
     description="A set of development tools for go/baduk/wéiqí projects.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
