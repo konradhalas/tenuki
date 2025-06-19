@@ -6,3 +6,9 @@ requires-python = ">=3.11"
 
 [tool.black]
 line-length = 120
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+xmldiff = "^2.7.0"
+black = "^25.1.0"
+

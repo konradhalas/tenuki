@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf8'?>
+<Tournament>
+    <Players>
+        <Player name="Cho" firstName="Chikun" grade="9p" rank="9p" country="pl" club="Wars" egfPin="12001704"
+                rating="2937" registeringStatus="FIN" />
+    </Players>
+</Tournament>

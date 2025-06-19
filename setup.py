@@ -22,7 +22,5 @@ setup(
     python_requires=">=3.11",
     packages=["tenuki"],
     package_data={"tenuki": ["py.typed"]},
-    extras_require={
-        "dev": ["pytest>=7.4", "black", "mypy"]
-    },
+    extras_require={"dev": ["pytest>=7.4", "black", "mypy", "xmldiff"]},
 )
